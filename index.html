@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PAINEL OFERTA RESELLER • Comunidades & Lojas</title>
+  <meta name="description" content="Produtos sem vínculo com marcas externas. Estrutura limpa e pronta para revenda." />
+  <style>
+    :root{
+      --bg:#03030f; 
+      --card:#0a0a2a; 
+      --muted:#b0b0ff; 
+      --text:#f0f0ff;
+      --neon-purple:#c084fc; 
+      --neon-cyan:#00f0ff; 
+      --border:rgba(192,132,252,.4);
+      --glow-purple:0 0 20px rgba(192,132,252,.7), 0 0 40px rgba(192,132,252,.4);
+      --glow-cyan:0 0 20px rgba(0,240,255,.7), 0 0 40px rgba(0,240,255,.4);
+      --shadow: 0 20px 60px rgba(0,0,0,.7);
+      --radius: 18px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial;
+      background:
+        radial-gradient(1400px 800px at 10% 5%, rgba(192,132,252,.4), transparent 60%),
+        radial-gradient(1000px 700px at 85% 15%, rgba(0,240,255,.35), transparent 60%),
+        radial-gradient(900px 600px at 50% 85%, rgba(192,132,252,.25), transparent 60%),
+        var(--bg);
+      color:var(--text);
+    }
+    .wrap{max-width:1100px; margin:0 auto; padding:28px 18px 80px}
+    .topbar{
+      display:flex; align-items:center; justify-content:space-between;
+      border:1px solid var(--border); background:rgba(10,10,42,.7);
+      border-radius: var(--radius); padding:16px 20px; box-shadow: var(--glow-purple);
+      backdrop-filter: blur(8px);
+    }
+    .brand{display:flex; align-items:center; gap:14px}
+    .logo{width:48px; height:48px; border-radius:16px;
+      background: linear-gradient(135deg, var(--neon-purple), var(--neon-cyan)); 
+      box-shadow: var(--glow-cyan);}
+    .hero{
+      margin-top:24px; padding:28px 24px;
+      border:1px solid var(--border); border-radius: var(--radius);
+      background: rgba(10,10,42,.65); box-shadow: var(--glow-purple);
+      text-align:center;
+    }
+    .hero h2 {text-shadow: var(--glow-cyan); color:var(--neon-cyan);}
+    .info{
+      margin-top:20px;
+      border:1px solid var(--border);
+      background: rgba(10,10,42,.65);
+      border-radius: var(--radius);
+      padding:20px; box-shadow: var(--glow-cyan);
+    }
+    .info h3{margin:0 0 10px; color:var(--neon-purple); text-shadow: var(--glow-purple);}
+    .info p{margin:0; color:var(--muted); line-height:1.6}
+    .products, .revenda{
+      margin-top:24px; padding:24px 20px; 
+      border:1px solid var(--border); border-radius: var(--radius);
+      background: rgba(10,10,42,.65); box-shadow: var(--glow-purple);
+    }
+    .products h3, .revenda h3 {margin:0 0 16px; color:var(--neon-cyan); text-shadow: var(--glow-cyan);}
+    .products ol {padding-left:24px; margin:0; list-style:none;}
+    .products li {margin-bottom:14px; color:var(--muted);}
+    .products li strong {color:var(--neon-purple); text-shadow: 0 0 8px var(--neon-purple);}
+    .products .neon {color:var(--neon-cyan); font-weight:600; text-shadow: var(--glow-cyan);}
+    .revenda ul {list-style:none; padding:0; margin:0;}
+    .revenda li {margin-bottom:16px; padding:12px; border-radius:12px; background:rgba(192,132,252,.08); border:1px solid rgba(192,132,252,.3);}
+    .revenda li strong {color:var(--neon-purple);}
+    .grid{display:grid; grid-template-columns: repeat(2, 1fr); gap:16px; margin-top:24px}
+    .card{
+      border:1px solid var(--border);
+      background: rgba(10,10,42,.7);
+      border-radius: var(--radius);
+      padding:16px; transition: all 0.3s;
+      box-shadow: var(--glow-cyan);
+    }
+    .card:hover {transform:translateY(-8px); box-shadow: var(--glow-purple), var(--glow-cyan);}
+    .card img{width:100%; height:220px; object-fit:cover; border-radius:12px; border:1px solid var(--border);}
+    .title{font-weight:700; margin:12px 0 6px; color:var(--neon-cyan);}
+    .muted{color:var(--muted); font-size:13px}
+    .footer{
+      margin-top:32px; padding:16px 20px;
+      border:1px solid var(--border); border-radius: var(--radius);
+      background: rgba(10,10,42,.65); color:var(--muted); font-size:13px;
+      text-align:center; box-shadow: var(--glow-purple);
+    }
+    @media (max-width:900px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+<div class="wrap">
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo"></div>
+      <strong>PAINEL OFERTA RESELLER</strong>
+    </div>
+    <span class="muted">Hub Oficial</span>
+  </header>
+
+  <section class="hero">
+    <h2>Estrutura  • Pronta para Revenda</h2>
+    <p class="muted">Sem marcas externas, sem propaganda, sem logos de terceiros. Tudo limpo e brilhante.</p>
+  </section>
+
+  <section class="info">
+    <h3>Informações Importantes</h3>
+    <p>
+      Todos os produtos são 100% sem vínculo com marcas externas, sem logos, sem nomes de cheats de terceiros e sem propaganda de qualquer tipo.<br><br>
+      Estrutura totalmente clean e pronta para você colocar o nome da sua loja ou comunidade e revender sem preocupação.<br><br>
+      Equipe online em média <strong>16 horas por dia</strong>, dando suporte pra você e pros seus clientes, sempre representando a <strong>sua loja</strong>.
+    </p>
+  </section>
+
+  <section class="products">
+    <h3>Painel Oficial Premium (Acesso Mensal)</h3>
+    <p class="muted" style="margin-bottom:16px;">R$ 499,00 por 30 dias • <strong>Bônus:</strong> +1 mês grátis no primeiro pagamento • Slots limitados</p>
+    <ol>
+      <li><span class="neon">1. Valorant EspAim</span> (Memory Aim + Only ESP)</li>
+      <li><span class="neon">2. Fortnite Full</span> (com Spoofer + Bypass)</li>
+      <li><span class="neon">3. Valorant VGC Emulator</span></li>
+      <li><span class="neon">4. Valorant TriggerBot</span> (humanizado)</li>
+      <li><span class="neon">5. Valorant Color Aim</span> (Razer, Logitech, HVCI on/off)</li>
+      <li><span class="neon">6. Valorant Private Color</span></li>
+      <li><span class="neon">7. CS2 Legit + Rage + Skin Changer</span> (unlock de skins, knives, gloves, etc.)</li>
+      <li><span class="neon">8. OneClick</span> pra ativar tudo rápido</li>
+    </ol>
+    <p class="muted" style="margin-top:20px;">Keys ilimitadas • Atualizações diárias • Suporte prioritário da equipe</p>
+  </section>
+
+  <section class="revenda">
+    <h3>Produtos Disponíveis à Parte (Revenda)</h3>
+    <ul>
+      <li><strong>Skin Changer Valorant</strong> (unlock de skins, knives, client-side) → revenda com até 65% off</li>
+      <li><strong>Proxy Menu FiveM + Executor incluso</strong> → revenda 65% off</li>
+      <li><strong>Spoofer FiveM painel mensal</strong> (remove HWID ban) → normal R$ 400, revenda com 65% off</li>
+    </ul>
+    <p class="muted" style="margin-top:16px;">Tudo sem marca, sem logo, atualizado e com suporte da equipe. Perfeito pra revenda com margem alta.</p>
+  </section>
+
+  <section class="grid">
+    <article class="card">
+      <img src="https://cdn.discordapp.com/banners/1212819740267913286/a_65e6a4292bbbef3c069d16f3c3dc0930.webp?size=480&animated=true">
+      <div class="title">Crazzy Community</div>
+      <div class="muted">Comunidade Parceira</div>
+    </article>
+
+    <article class="card">
+      <img src="https://cdn.discordapp.com/banners/1469467376176070780/f9aaef8880ea107a429deb39b5cb2c93.webp?size=1024">
+      <div class="title">FortuneHax 2.0</div>
+      <div class="muted">Comunidade Parceira</div>
+    </article>
+
+    <article class="card">
+      <img src="https://cdn.discordapp.com/icons/1469062665493156066/446e0b816a68b20f2789a06cf82ab90e.webp?size=480">
+      <div class="title">Infinit Community</div>
+      <div class="muted">Comunidade Parceira</div>
+    </article>
+
+    <article class="card">
+      <img src="https://cdn.discordapp.com/banners/1452868176315551867/eb55e779aa55bd5e127a0eeb375724ff.webp?size=1024">
+      <div class="title">Metralha Store</div>
+      <div class="muted">Loja Parceira</div>
+    </article>
+  </section>
+
+  <footer class="footer">
+    © <span id="y"></span> PAINEL OFERTA RESELLER — Todos os direitos reservados.
+  </footer>
+</div>
+<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
